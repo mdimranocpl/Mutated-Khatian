@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name = "STest">
+
+  <!--  <test name = "User 1 LoginTest">
+      <classes>
+         <class name = "com.bat.MutatedKhatian.Test.LoginTest" />
+      </classes>
+   </test> --> 
+   
+   <!-- <test name = "entrykariTest">
+      <classes>
+         <class name = "com.bat.MutatedKhatian.Test.EntrykariDeskTest" />
+      </classes>
+   </test>-->
+   
+	<test name = "jacaikariTest">
+      <classes>
+         <class name = "com.bat.MutatedKhatian.Test.JacaikariDeskTest" />
+      </classes>
+   </test>
+
+      <!--  <test name = "tulonakariTest">
+      <classes>
+         <class name = "com.bat.MutatedKhatian.Test.TulonakariDeskTest" />
+      </classes>
+   </test> 
+   
+      <test name = "onumodonkariTest">
+      <classes>
+         <class name = "com.bat.MutatedKhatian.Test.OnumodonkariDeskTest" />
+      </classes>
+   </test>  -->
+   
+   
+
+</suite>
