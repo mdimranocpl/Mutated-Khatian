@@ -1,42 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [STest]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="entrykariTest(failed)">
-    <classes>
-      <class name="com.bat.MutatedKhatian.Test.EntrykariDeskTest">
-        <methods>
-          <include name="logout"/>
-          <include name="khatianEntry"/>
-          <include name="logintest"/>
-          <include name="loginTestTitleVerify"/>
-        </methods>
-      </class> <!-- com.bat.MutatedKhatian.Test.EntrykariDeskTest -->
-    </classes>
-  </test> <!-- entrykariTest(failed) -->
-  <test thread-count="5" name="jacaikariTest(failed)">
-    <classes>
-      <class name="com.bat.MutatedKhatian.Test.JacaikariDeskTest">
-        <methods>
-          <include name="loginTestTitleVerify"/>
-          <include name="jacaikaritest"/>
-          <include name="logout"/>
-          <include name="logintest"/>
-        </methods>
-      </class> <!-- com.bat.MutatedKhatian.Test.JacaikariDeskTest -->
-    </classes>
-  </test> <!-- jacaikariTest(failed) -->
-  <test thread-count="5" name="tulonakariTest(failed)">
-    <classes>
-      <class name="com.bat.MutatedKhatian.Test.TulonakariDeskTest">
-        <methods>
-          <include name="logout"/>
-          <include name="logintest"/>
-          <include name="loginTestTitleVerify"/>
-          <include name="tulonakaritest"/>
-        </methods>
-      </class> <!-- com.bat.MutatedKhatian.Test.TulonakariDeskTest -->
-    </classes>
-  </test> <!-- tulonakariTest(failed) -->
   <test thread-count="5" name="onumodonkariTest(failed)">
     <classes>
       <class name="com.bat.MutatedKhatian.Test.OnumodonkariDeskTest">

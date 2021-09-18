@@ -164,8 +164,8 @@ public class XpathUtils {
 
 		
 		public static final String  সকল_তথ্য_যাচাই_করেছি = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/label/div/span/input"; 
-		public static final String  সিলেক্ট_স্টেটাস = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/div[3]/form/div/div/div/div[1]/div[2]/div/select"; 
-		public static final String  সিলেক্ট_ডেস্ক = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/div[3]/form/div/div/div/div[2]/div[2]/div/select"; 
+		public static final String  সিলেক্ট_স্টেটাস = "application_status"; //id
+		public static final String  সিলেক্ট_ডেস্ক = "desk_status"; 
 		public static final String  মন্তব্য = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/div[3]/form/div/div/div/div[3]/div[2]/div/textarea"; 
 		public static final String   প্রেরণ = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/div[3]/form/div/div/div/div[7]/div[2]/div/button"; 
 
@@ -174,10 +174,10 @@ public class XpathUtils {
 	
 	public static class OnumodonKariDeskModule {
 
-		public static final String খারিজ_খতিয়ান = "/html/body/div[3]/div[1]/div/ul/li[5]/a/span"; 
-		public static final String অনুমোদন_এর_জন্য_অপেক্ষমাণ = "/html/body/div[3]/div[2]/div/div[3]/div/div/div/div[1]/div/a/h3"; 
+		public static final String খারিজ_খতিয়ান = "/html/body/div[3]/div[1]/div/ul/li[6]/a/span"; 
+		public static final String অনুমোদন_এর_জন্য_অপেক্ষমাণ = "/html/body/div[3]/div[2]/div/div[3]/div/div/div/div[1]/div/a"; 
 		
-		//তুলনা এর জন্য প্রেরিত খতিয়ান লিস্ট
+		//অনুমোদন এর জন্য প্রেরিত খতিয়ান লিস্ট
 		public static final String  বিস্তারিত = "/html/body/div[3]/div[2]/div[1]/div/div[2]/div/div/div[2]/div/table/tbody/tr[1]/td[5]/button"; 
 		public static final String  বিস্তারিত_visit_bottom = "/html/body/div[3]/div[2]/div[2]/div[2]/div/div/div/div[2]/div[2]/h4"; 
 		public static final String  বিস্তারিত_visit_top = "/html/body/div[3]/div[2]/div[2]/div[2]/div/div/div/table[1]/tbody/tr[3]/td[3]"; 
@@ -196,7 +196,7 @@ public class XpathUtils {
 		public static final String  সিলেক্ট_স্টেটাস = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/div[3]/form/div/div/div/div[1]/div[2]/div/select"; 
 		public static final String  সিলেক্ট_ডেস্ক = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/div[3]/form/div/div/div/div[2]/div[2]/div/select"; 
 		public static final String  মন্তব্য = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/div[3]/form/div/div/div/div[3]/div[2]/div/textarea"; 
-		public static final String   প্রেরণ = "/html/body/div[3]/div[2]/div[1]/div/div/div/div/div/div[3]/form/div/div/div/div[7]/div[2]/div/button"; 
+		public static final String   প্রেরণ = "//*[@id=\"batch-process-form\"]/div/div/div/div[7]/div[2]/div/button"; 
 		
 		//অনুমোদিত খতিয়ান অনুসন্ধান
 		public static final String  ড্যাশবোর্ড = "/html/body/div[3]/div[1]/div/ul/li[1]/a/span"; 

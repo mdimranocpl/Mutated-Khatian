@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
@@ -37,7 +38,7 @@ private WebDriver driver = null;
 			
 			System.out.println("Login Test Start");
 
-			driver.findElement(By.id(XpathUtils.LoginModule.username)).sendKeys("imrank777");
+			driver.findElement(By.id(XpathUtils.LoginModule.username)).sendKeys("imranacland777");
 			driver.findElement(By.id(XpathUtils.LoginModule.password)).sendKeys("Imran@123+");
 			driver.findElement(By.xpath(XpathUtils.LoginModule.submit)).click();
 
@@ -87,24 +88,39 @@ private WebDriver driver = null;
 				
 				Thread.sleep(5000);
 				Select সিলেক্ট_স্টেটাস = new Select(driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.সিলেক্ট_স্টেটাস)));
-				সিলেক্ট_স্টেটাস.selectByValue("2");
+				সিলেক্ট_স্টেটাস.selectByValue("4");
 				
 //				Thread.sleep(3000);
 //				Select সিলেক্ট_ডেস্ক = new Select(driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.সিলেক্ট_ডেস্ক)));
 //				সিলেক্ট_ডেস্ক.selectByValue("2");
 //				
-//				Thread.sleep(1000);
-//				driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.মন্তব্য)).sendKeys("abc");
+				Thread.sleep(1000);
+				driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.মন্তব্য)).sendKeys("abc");
 				
 				Thread.sleep(3000);
 				driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.প্রেরণ)).click();
 				//end second window
 				driver.close();
 			}
-			
+
 			driver.switchTo().window(mainWindow);
 	
 		}
+		
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.ড্যাশবোর্ড)).click();
+		
+		Thread.sleep(3000);
+		driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.অনুমোদিত_খতিয়ান_দেখুন)).click();
+		
+
+		Thread.sleep(1000);
+		driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.মৌজা_নির্বাচন)).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.মৌজা_নির্বাচন_search)).sendKeys("চক দর্শনপাড়"+ Keys.ENTER);
+		
+		Thread.sleep(9000);
+		driver.findElement(By.xpath(XpathUtils.OnumodonKariDeskModule.অনুসন্ধান_করুন)).click();
 		
 		System.out.println("Onumodonkari Test End");
 		    

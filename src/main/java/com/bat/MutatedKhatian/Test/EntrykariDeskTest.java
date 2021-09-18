@@ -92,19 +92,32 @@ public class EntrykariDeskTest {
 			Select মালিকের_ধরণ = new Select(driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মালিকের_ধরণ)));
 			মালিকের_ধরণ.selectByValue("1");
 			
+			
 			Thread.sleep(2000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মালিক_অকৃষি_প্রজা_বা_ইজারাদারের_নাম)).clear();
+			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মালিক_অকৃষি_প্রজা_বা_ইজারাদারের_নাম)).sendKeys("মালিক_অকৃষি_প্রজা_বা_ইজারাদারের_নাম");
 			
+
 			Thread.sleep(1000);
 			driver.findElement(By.xpath(XpathUtils.EntryKariDeskModule.পিতা)).click();
+			
 			Thread.sleep(1000);
 			driver.findElement(By.xpath(XpathUtils.EntryKariDeskModule.স্বামী)).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath(XpathUtils.EntryKariDeskModule.পিতা)).click();
+			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.পিতা_or_স্বামী_name)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.পিতা_or_স্বামী_name)).sendKeys("পিতা");
+			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মাতার_নাম)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মাতার_নাম)).sendKeys("মাতার_নাম");
+			
+			
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.অংশ)).sendKeys("0.5");
 			Thread.sleep(1000);
@@ -113,6 +126,9 @@ public class EntrykariDeskTest {
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.গ্ৰুপ)).sendKeys("3");
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মোবাইল_নম্বর)).sendKeys("01763732521");
+			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.ঠিকানা)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.ঠিকানা)).sendKeys("ঠিকানা");
 			
@@ -124,6 +140,8 @@ public class EntrykariDeskTest {
 			Thread.sleep(2000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.পরিচয়ের_নম্বর)).sendKeys("19928714713000225");
 			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.জন্ম_তারিখ)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.জন্ম_তারিখ)).sendKeys("19-09-2010");
 			//মালিক1
@@ -133,30 +151,50 @@ public class EntrykariDeskTest {
 			
 			//মালিক2
 			Thread.sleep(3000);
-			Select মালিকের_ধরণ_2 = new Select(driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মালিকের_ধরণ)));
-			মালিকের_ধরণ_2.selectByValue("1");
+			Select মালিকের_ধরণ2 = new Select(driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মালিকের_ধরণ)));
+			মালিকের_ধরণ2.selectByValue("1");
+			
 			
 			Thread.sleep(2000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মালিক_অকৃষি_প্রজা_বা_ইজারাদারের_নাম)).clear();
+			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মালিক_অকৃষি_প্রজা_বা_ইজারাদারের_নাম)).sendKeys("মালিক_অকৃষি_প্রজা_বা_ইজারাদারের_নাম");
 			
+
 			Thread.sleep(1000);
 			driver.findElement(By.xpath(XpathUtils.EntryKariDeskModule.পিতা)).click();
+			
 			Thread.sleep(1000);
 			driver.findElement(By.xpath(XpathUtils.EntryKariDeskModule.স্বামী)).click();
 			Thread.sleep(1000);
 			driver.findElement(By.xpath(XpathUtils.EntryKariDeskModule.পিতা)).click();
+			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.পিতা_or_স্বামী_name)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.পিতা_or_স্বামী_name)).sendKeys("পিতা");
+			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মাতার_নাম)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মাতার_নাম)).sendKeys("মাতার_নাম");
+			
+			
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.অংশ)).sendKeys("0.5");
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.রাজস্ব)).sendKeys("2");
+			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.গ্ৰুপ)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.গ্ৰুপ)).sendKeys("3");
+			
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.মোবাইল_নম্বর)).sendKeys("01763732521");
+			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.ঠিকানা)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.ঠিকানা)).sendKeys("ঠিকানা");
 			
@@ -168,6 +206,8 @@ public class EntrykariDeskTest {
 			Thread.sleep(2000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.পরিচয়ের_নম্বর)).sendKeys("19928714713000225");
 			
+			Thread.sleep(1000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.জন্ম_তারিখ)).clear();
 			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.জন্ম_তারিখ)).sendKeys("19-09-2010");
 			//মালিক 2
@@ -251,7 +291,9 @@ public class EntrykariDeskTest {
 			Thread.sleep(3000);
 			driver.findElement(By.xpath(XpathUtils.EntryKariDeskModule.দাগ_সম্পাদনা_button)).click();
 			
-			Thread.sleep(3000);
+			Thread.sleep(2000);
+			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.দাগ_নং)).clear();
+			Thread.sleep(1000);
 			driver.findElement(By.id(XpathUtils.EntryKariDeskModule.দাগ_নং)).sendKeys("23");
 			
 			Thread.sleep(1000);

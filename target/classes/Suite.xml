@@ -7,7 +7,7 @@
       </classes>
    </test> --> 
    
-	 <test name = "entrykariTest">
+	<test name = "entrykariTest">
       <classes>
          <class name = "com.bat.MutatedKhatian.Test.EntrykariDeskTest" />
       </classes>
@@ -23,7 +23,7 @@
       <classes>
          <class name = "com.bat.MutatedKhatian.Test.TulonakariDeskTest" />
       </classes>
-   </test> 
+   </test>
    
       <test name = "onumodonkariTest">
       <classes>

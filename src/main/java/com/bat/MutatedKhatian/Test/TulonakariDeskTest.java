@@ -85,13 +85,13 @@ private WebDriver driver = null;
 //				Thread.sleep(3000);
 //				driver.findElement(By.xpath(XpathUtils.TulonaKariDeskModule.সকল_তথ্য_যাচাই_করেছি)).click();
 				
-				Thread.sleep(5000);
-				Select সিলেক্ট_স্টেটাস = new Select(driver.findElement(By.xpath(XpathUtils.TulonaKariDeskModule.সিলেক্ট_স্টেটাস)));
-				সিলেক্ট_স্টেটাস.selectByValue("2");
+				Thread.sleep(7000);
+				Select সিলেক্ট_স্টেটাস = new Select(driver.findElement(By.id(XpathUtils.TulonaKariDeskModule.সিলেক্ট_স্টেটাস)));
+				সিলেক্ট_স্টেটাস.selectByValue("3");
 				
 				Thread.sleep(3000);
-				Select সিলেক্ট_ডেস্ক = new Select(driver.findElement(By.xpath(XpathUtils.TulonaKariDeskModule.সিলেক্ট_ডেস্ক)));
-				সিলেক্ট_ডেস্ক.selectByValue("2");
+				Select সিলেক্ট_ডেস্ক = new Select(driver.findElement(By.id(XpathUtils.TulonaKariDeskModule.সিলেক্ট_ডেস্ক)));
+				সিলেক্ট_ডেস্ক.selectByValue("3");
 				
 				Thread.sleep(1000);
 				driver.findElement(By.xpath(XpathUtils.TulonaKariDeskModule.মন্তব্য)).sendKeys("abc");
