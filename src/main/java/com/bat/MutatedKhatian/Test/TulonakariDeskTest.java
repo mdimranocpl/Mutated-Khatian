@@ -22,8 +22,8 @@ private WebDriver driver = null;
 	public void loginTestTitleVerify() {
 		
 		driver = DriverManager.driver;
-		driver.manage().window().maximize();
-		driver.get(UrlTextUtils.Url.baseUrl);
+//		driver.manage().window().maximize();
+//		driver.get(UrlTextUtils.Url.baseUrl);
 		
 		//home page title verify
 		Assert.assertEquals(driver.getTitle(), UrlTextUtils.Text.homePageTitle);
@@ -82,10 +82,10 @@ private WebDriver driver = null;
 				Thread.sleep(3000);
 				driver.findElement(By.xpath(XpathUtils.TulonaKariDeskModule.বিস্তারিত2_close)).click();
 
-				Thread.sleep(3000);
-				driver.findElement(By.xpath(XpathUtils.TulonaKariDeskModule.সকল_তথ্য_যাচাই_করেছি)).click();
+//				Thread.sleep(3000);
+//				driver.findElement(By.xpath(XpathUtils.TulonaKariDeskModule.সকল_তথ্য_যাচাই_করেছি)).click();
 				
-				Thread.sleep(3000);
+				Thread.sleep(5000);
 				Select সিলেক্ট_স্টেটাস = new Select(driver.findElement(By.xpath(XpathUtils.TulonaKariDeskModule.সিলেক্ট_স্টেটাস)));
 				সিলেক্ট_স্টেটাস.selectByValue("2");
 				
